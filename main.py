@@ -21,6 +21,16 @@ app.add_middleware(
 # Járatok és irányok definíciója
 routes = {
     "10": ["Orsovai utca felé", "Szedreskerti Lakónegyed felé"],
+    "11": ["Vásárhelyi utca - Sóstói bevásárlóközpont - Szedreskerti Lakónegyed (körjárat)"],
+    "12": ["Sóstói bevásárlóközpont - Vásárhelyi utca - Szedreskerti Lakónegyed (körjárat)"],
+    "12Y": ["Babér utca felé", "Fecskeparti Lakónegyed felé"],
+    "13G": ["Babér utca felé", "Autóbusz-állomás felé"],
+    "14": ["Köfém Lakótelep felé", "Szedreskerti Lakónegyed felé"],
+    "14G": ["Babér utca felé", "Csapó utca felé"],
+    "15": ["Gáztelep felé", "Fecskeparti Lakónegyed felé"],
+    "15Y": ["Vásárhelyi úti lakótelep felé", "Csapó utca felé"],
+    "16": ["Opole tér - Kőrösi utca - Opole tér - Babér utca - Börgönd felé"],
+    "17": ["Köfém Lakótelep felé", "Csapó utca felé"], 
     "20": ["Köfém Lakótelep felé", "Hübner András utca felé"],
     "32": ["Kassai utca / Nagyszombati utca felé", "Vásárhelyi úti lakótelep felé"],
     "34": ["Fecskeparti Lakótelep felé", "Vasútállomás felé"],
