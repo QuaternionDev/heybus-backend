@@ -58,10 +58,16 @@ def get_vehicles():
     # Csak aktív járművek (utolsó frissítés < 2 perc)
     now = time.time()
     active = []
+    active_lines = set()
     for v in vehicles.values():
         if now - v["last_update"] < 120:
             active.append(v)
-    return {"count": len(active), "vehicles": active}
+            active_lines.add(v["line"])
+    return {
+        "count": len(active),
+        "active_lines": sorted(list(active_lines)),
+        "vehicles": active
+    }
 
 @app.get("/")
 def root():
