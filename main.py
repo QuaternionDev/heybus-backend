@@ -20,9 +20,10 @@ app.add_middleware(
 
 # Járatok és irányok definíciója
 routes = {
+    "10": ["Orsovai utca felé", "Szedreskerti Lakónegyed felé"],
     "20": ["Köfém Lakótelep felé", "Hübner András utca felé"],
-    "32": ["Feketehegy felé", "Vasútállomás felé"],
-    "34": ["Palotaváros felé", "Vasútállomás felé"],
+    "32": ["Kassai utca / Nagyszombati utca felé", "Vásárhelyi úti lakótelep felé"],
+    "34": ["Fecskeparti Lakótelep felé", "Vasútállomás felé"],
 }
 
 class LocationUpdate(BaseModel):
