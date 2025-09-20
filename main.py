@@ -1,12 +1,24 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List, Dict
+from fastapi.middleware.cors import CORSMiddleware
 import time
 
 app = FastAPI(title="HeyBus Fehérvár API")
 
 # Egyszerű memória adatbázis
 vehicles: Dict[str, Dict] = {}
+
+from fastapi.middleware.cors import CORSMiddleware
+
+# CORS beállítás
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://heybusfehervar.netlify.app/"],  # ide beteheted a Netlify domain-t pl. ["https://heybus.netlify.app"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class LocationUpdate(BaseModel):
     line: str
