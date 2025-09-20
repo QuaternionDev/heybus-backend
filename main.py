@@ -14,7 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # CORS beállítás
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://heybusfehervar.netlify.app/"],  # ide beteheted a Netlify domain-t pl. ["https://heybus.netlify.app"]
+    allow_origins=["https://heybusfehervar.netlify.app"],  # ide beteheted a Netlify domain-t pl. ["https://heybus.netlify.app"]
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
